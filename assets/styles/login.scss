@@ -1,0 +1,20 @@
+@import "variables";
+
+.login-main{
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
+
+  .login-heading{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 500;
+    color: $main_white;
+    text-transform: uppercase;
+  }
+  .login-form{
+    flex: 2;
+  }
+}
