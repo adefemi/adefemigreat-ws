@@ -1,0 +1,23 @@
+@import "variables";
+
+.home-heading{
+ padding-top: 200px;
+}
+
+.home-heading-image{
+  padding-top: 30px;
+}
+
+.home-skill-con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-segment{
+  margin-right: 80px;
+  border-top: 2px solid darken($main_white, 65%);
+  border-bottom: 2px solid darken($main_white, 65%);
+  padding: 20px 0;
+  margin-bottom: 50px;
+}

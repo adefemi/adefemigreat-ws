@@ -1,0 +1,23 @@
+.home-heading {
+  padding-top: 200px;
+}
+
+.home-heading-image {
+  padding-top: 30px;
+}
+
+.home-skill-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-segment {
+  margin-right: 80px;
+  border-top: 2px solid #1d2738;
+  border-bottom: 2px solid #1d2738;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=home.css.map */
