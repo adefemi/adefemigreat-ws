@@ -12,6 +12,9 @@ switch ($request) {
     case '/about' :
         require __DIR__ . '/pages/about.php';
         break;
+    case '/projects' :
+        require __DIR__ . '/pages/projects.php';
+        break;
     case '/login' :
         require __DIR__ . '/pages/login.php';
         break;

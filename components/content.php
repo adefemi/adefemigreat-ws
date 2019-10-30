@@ -29,6 +29,9 @@ $request = $_SERVER['REQUEST_URI'];
                 case '/about' :
                     require_once "pages/AboutComponents/aboutContent.php";
                     break;
+                case '/projects' :
+                    require_once "pages/ProjectComponents/projectContent.php";
+                    break;
                 case '/login' :
                     require_once "pages/LoginComponents/loginContent.php";
                     break;

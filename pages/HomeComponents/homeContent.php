@@ -1,4 +1,4 @@
-<div>
+<div class="max-width-1400">
     <div class="container-section">
         <div class="section-1 home-heading">
             <h1 class="title">Hello! I'm Adefemi</h1>
@@ -58,9 +58,9 @@
                 <div class="img-con" style="background-image: url('https://cdn.pixabay.com/photo/2019/09/23/20/55/castle-4499711_1280.jpg')"></div>
             </div>
         </div>
-        <div class="section-1 home-heading">
+        <div class="section-1 home-heading margin-left-20">
             <h1 class="project-title">Project1</h1>
-            <p class="context margin-right-10">
+            <p class="context ">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Animi autem cupiditate eveniet illum incidunt ipsum, saepe tenetur voluptatibus. Autem, sapiente?
             </p>
@@ -71,9 +71,9 @@
     </div>
 
     <div class="container-section">
-        <div class="section-1 home-heading">
+        <div class="section-1 home-heading margin-right-10">
             <h1 class="project-title">Project2</h1>
-            <p class="context margin-right-10">
+            <p class="context">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Animi autem cupiditate eveniet illum incidunt ipsum, saepe tenetur voluptatibus. Autem, sapiente?
             </p>
@@ -114,14 +114,12 @@
                     </label>
                 </div>
                 <br>
-                <button class="button-main">Login</button>
+                <button class="button-main">Send Message</button>
             </div>
         </div>
         <div class="section-2 home-heading">
             <h1 class="title text-center margin-top-30">Contact me</h1>
         </div>
     </div>
-    <div class="margin-top-50 footer">
-        Adefemigreat &copy; 2018
-    </div>
+    <?php include_once("components/footer.php") ?>
 </div>
