@@ -1,3 +1,31 @@
+<?php 
+
+    // get setting data
+    $ch = curl_init($GLOBALS["user_api"]."/setting");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    $data = curl_exec($ch);
+    curl_close($ch);
+
+    // get skill data
+    $ch = curl_init($GLOBALS["user_api"]."/skill-set/");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    $data_skill = curl_exec($ch);
+    curl_close($ch);
+
+    // get projects data
+    $ch = curl_init($GLOBALS["project_api"]."/list/");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    $data_project = curl_exec($ch);
+    curl_close($ch);
+
+    $decoded_setting = json_decode($data, true)[0];
+    $decoded_skills = json_decode($data_skill, true);
+    $decoded_projects = json_decode($data_project, true)["results"];
+?>
+
 <!DOCTYPE html>
 <html
     lang="en"

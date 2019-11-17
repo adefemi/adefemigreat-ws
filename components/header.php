@@ -7,8 +7,8 @@
     </div>
     <div class="flex align-center heading-right">
         <div class="nav-drawer" id="nav-drawer">
-        <div class="nav-drawer-toggler"></div>
+            <div class="nav-drawer-toggler"></div>
         </div>
-        <div class="nav-items"><a href="/login">Log in</a></div>
+        <!-- <div class="nav-items"><a href="/login">Log in</a></div> -->
     </div>
 </div>
