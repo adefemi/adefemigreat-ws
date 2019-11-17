@@ -1,19 +1,71 @@
 .login-main {
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-right: 50px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+  .login-main {
+    margin-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 .login-main .login-heading {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 20px;
   font-weight: 500;
   color: #c2ccdf;
   text-transform: uppercase;
-}
-.login-main .login-form {
-  flex: 2;
+  min-width: 300px;
+  position: relative;
 }
 
+.login-main .login-heading::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  height: 2px;
+  left: 0;
+  width: 30px;
+  background-color: #4d7bd1;
+}
+
+@media screen and (max-width: 480px) {
+  .login-main .login-heading {
+    margin-bottom: 30px;
+  }
+}
+
+.login-main .login-form {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  min-width: 300px;
+}
+
+.login-main .login-form .inner {
+  position: relative;
+  max-width: 600px;
+}
+
+.login-main .login-form .forgot-password {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #38496a;
+  cursor: pointer;
+}
 /*# sourceMappingURL=login.css.map */

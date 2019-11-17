@@ -1,15 +1,26 @@
 .home-heading {
-  padding-top: 200px;
-}
-
-.home-heading-image {
-  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-skill-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-segment {
@@ -20,4 +31,16 @@
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  .home-segment {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-segment {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 /*# sourceMappingURL=home.css.map */

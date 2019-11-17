@@ -1,13 +1,20 @@
 <div>
     <div class="login-main">
         <div class="login-heading">
-            Log in
+            Register
         </div>
         <div class="login-form">
            <div class="inner">
-            <div class="form-group">
+                <div class="form-group">
                     <label>
-                        <span class="label">Email/Username</span>
+                        <span class="label">Email</span>
+                        <input type="email" name="a-email" autocomplete="off"
+                            readonly onfocus="this.removeAttribute('readonly');"/>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="label">Username</span>
                         <input type="text" name="a-username" autocomplete="off"
                             readonly onfocus="this.removeAttribute('readonly');"/>
                     </label>
@@ -19,12 +26,11 @@
                             readonly onfocus="this.removeAttribute('readonly');"/>
                     </label>
                 </div>
-                <a class="forgot-password" href="/forgot-password">Forgot Password?</a>
            </div>
             <br>
             <button class="button-main">Login</button>
             <div class="auth-comment">
-                Don't have an account yet? <a href="/register">Register</a>
+                Already have an account? <a href="/login">Log in</a>
             </div>
         </div>
     </div>

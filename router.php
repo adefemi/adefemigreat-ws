@@ -9,16 +9,22 @@ switch ($request) {
     case '' :
         require __DIR__ . '/pages/home.php';
         break;
-    case '/about' :
-        require __DIR__ . '/pages/about.php';
-        break;
     case '/projects' :
         require __DIR__ . '/pages/projects.php';
         break;
     case '/login' :
         require __DIR__ . '/pages/login.php';
         break;
+    case '/register' :
+        require __DIR__ . '/pages/register.php';
+        break;
+    case '/gallery' :
+        require __DIR__ . '/pages/gallery.php';
+        break;
     default:
         require __DIR__ . '/pages/404.php';
         break;
 }
+
+?>
+<script src="assets/scripts/logics.js"></script>

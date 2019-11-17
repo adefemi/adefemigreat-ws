@@ -1,23 +1,30 @@
 @import "variables";
 
-.home-heading{
- padding-top: 200px;
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.home-heading-image{
-  padding-top: 30px;
-}
-
-.home-skill-con{
+.home-skill-con {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.home-segment{
+.home-segment {
   margin-right: 80px;
   border-top: 2px solid darken($main_white, 65%);
   border-bottom: 2px solid darken($main_white, 65%);
   padding: 20px 0;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 600px) {
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }

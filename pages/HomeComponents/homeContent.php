@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="container-section">
+    <div class="container-section flex-inverse">
         <div class="section-1 home-heading section-border">
             <p class="context">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi atque consequatur cumque debitis dignissimos dolore doloribus,
@@ -19,12 +19,12 @@
             </p>
         </div>
         <div class="section-2 home-heading">
-            <h1 class="title text-center margin-top-30">About me</h1>
+            <h1 class="title text-center">About me</h1>
         </div>
     </div>
-    <div class="container-section margin-top-50">
+    <div class="container-section">
         <div class="section-1 home-heading">
-            <h1 class="title text-center margin-top-30">What i can do</h1>
+            <h1 class="title text-center">What i can do</h1>
         </div>
         <div class="section-2 home-skill-con section-border">
             <div class="skill-con">
@@ -58,20 +58,8 @@
                 <div class="img-con" style="background-image: url('https://cdn.pixabay.com/photo/2019/09/23/20/55/castle-4499711_1280.jpg')"></div>
             </div>
         </div>
-        <div class="section-1 home-heading margin-left-20">
-            <h1 class="project-title">Project1</h1>
-            <p class="context ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Animi autem cupiditate eveniet illum incidunt ipsum, saepe tenetur voluptatibus. Autem, sapiente?
-            </p>
-            <button class="button-main">
-                Explore
-            </button>
-        </div>
-    </div>
-
-    <div class="container-section">
-        <div class="section-1 home-heading margin-right-10">
+        <div class="section-1 home-heading margin-left-20 remove-spaces-mobile">
+        <div>
             <h1 class="project-title">Project2</h1>
             <p class="context">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -80,6 +68,22 @@
             <button class="button-main">
                 Explore
             </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-section flex-inverse">
+        <div class="section-1 home-heading margin-right-10 remove-spaces-mobile">
+            <div>
+            <h1 class="project-title">Project2</h1>
+            <p class="context">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Animi autem cupiditate eveniet illum incidunt ipsum, saepe tenetur voluptatibus. Autem, sapiente?
+            </p>
+            <button class="button-main">
+                Explore
+            </button>
+            </div>
         </div>
         <div class="section-2 home-heading-image">
             <div class="img-con-cover">
@@ -89,7 +93,7 @@
 
     </div>
 
-    <div class="container-section">
+    <div class="container-section flex-inverse">
         <div class="section-1 home-skill-con section-border">
             <div style="width: 100%">
                 <div class="form-group">

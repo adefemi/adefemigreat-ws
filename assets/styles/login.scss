@@ -1,20 +1,59 @@
 @import "variables";
 
-.login-main{
+.login-main {
   margin-top: 100px;
   display: flex;
   width: 100%;
   padding-right: 50px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 
-  .login-heading{
+  @media screen and (max-width: 480px) {
+    margin-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .login-heading {
     flex: 1;
     font-size: 20px;
     font-weight: 500;
     color: $main_white;
     text-transform: uppercase;
+    min-width: 300px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      height: 2px;
+      left: 0;
+      width: 30px;
+      background-color: $blue-ascent;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 30px;
+    }
   }
-  .login-form{
+  .login-form {
     flex: 2;
+    min-width: 300px;
+
+    .inner {
+      position: relative;
+      max-width: 600px;
+    }
+
+    .forgot-password {
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: darken($color: $main_white, $amount: 50%);
+      cursor: pointer;
+    }
   }
 }
