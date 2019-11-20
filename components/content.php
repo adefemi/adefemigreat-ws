@@ -42,8 +42,14 @@ $request = $_SERVER['REQUEST_URI'];
                     require_once "pages/GalleryComponents/galleryContent.php";
                     break;
                 default:
-                    require_once "pages/404Components/404Content.php";
-                    break;
+                    if(preg_match_all('/projects\?[a-z]+=[0-9]*/', $request)){
+                        require_once "pages/ProjectComponents/projectContent.php";
+                        break;
+                    }
+                    else{
+                        require_once "pages/404Components/404Content.php";
+                        break;
+                    }
             }
             ?>
         </div>

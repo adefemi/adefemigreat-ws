@@ -1,3 +1,23 @@
+<?php 
+    $query = parse_str($_SERVER['QUERY_STRING'], $query_arry);
+    $page = 1;
+    if($query_arry["page"] != NULL){
+        $page = $query_arry["page"];
+    }
+
+    // get projects data
+    $ch = curl_init($GLOBALS["project_api"]."/list/?page=".$page);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    $data_project = curl_exec($ch);
+    curl_close($ch);
+
+    $page_error = json_decode($data_project, true)["detail"];
+
+    $decoded_project_data = json_decode($data_project, true);
+    $decoded_projects = json_decode($data_project, true)["results"];
+?>
+
 <!DOCTYPE html>
 <html
         lang="en"

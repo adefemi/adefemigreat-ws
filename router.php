@@ -11,7 +11,7 @@ switch ($request) {
         break;
     case '/projects' :
         require __DIR__ . '/pages/projects.php';
-        break;
+        break;        
     case '/login' :
         require __DIR__ . '/pages/login.php';
         break;
@@ -22,8 +22,14 @@ switch ($request) {
         require __DIR__ . '/pages/gallery.php';
         break;
     default:
-        require __DIR__ . '/pages/404.php';
-        break;
+        if(preg_match_all('/projects\?[a-z]+=[0-9]*/', $request)){
+            require __DIR__ . '/pages/projects.php';
+            break;
+        }
+        else{
+            require __DIR__ . '/pages/404.php';
+            break;
+        }
 }
 
 ?>

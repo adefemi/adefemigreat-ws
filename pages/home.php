@@ -23,7 +23,7 @@
 
     $decoded_setting = json_decode($data, true)[0];
     $decoded_skills = json_decode($data_skill, true);
-    $decoded_projects = json_decode($data_project, true)["results"];
+    $decoded_projects = array_slice(json_decode($data_project, true)["results"], 0, 2);
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +32,7 @@
 >
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Welcome to Adefemigreat's Website</title>
+	<title>Welcome to my website - adefemigreat says hello.</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/mainStyle.css">
     <link rel="stylesheet" href="../assets/styles/home.css">

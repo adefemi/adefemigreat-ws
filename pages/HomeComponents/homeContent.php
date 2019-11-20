@@ -100,7 +100,7 @@
 
     <?php } ?>
 
-    <?php if(count($decoded_projects) == 1){ ?>
+    <?php if(count($decoded_projects) <= 1){ ?>
         <div class="container-section flex-inverse">
         <div class="section-1 home-skill-con section-border">
             <div style="width: 100%">

@@ -26,7 +26,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #010311;
+  background-color: rgba(1, 3, 17, 0.8);
   z-index: 1;
 }
 
@@ -211,6 +211,8 @@ body {
           flex-direction: column;
   margin-right: 100px;
   margin-top: 100px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -520,8 +522,14 @@ body {
   margin-bottom: 20px;
   text-align: right;
   color: #7f94bc;
-  margin-right: 20px;
+  margin-right: 80px;
   font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -692,6 +700,74 @@ a:active {
   .gallery {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+.paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 80px;
+}
+
+.paginator .page-items {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid rgba(77, 123, 209, 0.7);
+  font-size: 11px;
+  color: rgba(77, 123, 209, 0.7) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.paginator .page-items:last-child {
+  margin-right: 0;
+}
+
+.paginator .page-items:hover {
+  background-color: rgba(77, 123, 209, 0.7);
+  color: #c2ccdf !important;
+  border: none;
+  cursor: pointer;
+}
+
+.paginator .page-items.disabled {
+  color: #151b27 !important;
+  border: 2px solid #151b27;
+}
+
+.paginator .page-items.disabled:hover {
+  background-color: transparent;
+  color: #38496a;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .paginator {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=mainStyle.css.map */
