@@ -1,8 +1,8 @@
 <div class="max-width-1400">
     <div class="container-section">
-        <div class="section-1 home-heading">
-            <h1 class="title">Hello! I'm Adefemi</h1>
-            <h3 class="title2">Am a Software Developer!!!</h3>
+        <div class="section-1 home-heading" style="margin-bottom: 20px">
+            <h1 class="title"><?php echo($decoded_setting['header_main']); ?></h1>
+            <h3 class="title2"><?php echo($decoded_setting['bullet']); ?></h3>
         </div>
         <div class="section-2 home-heading-image">
             <div class="img-con-cover">
@@ -110,31 +110,7 @@
     <?php if(count($decoded_projects) <= 1){ ?>
         <div class="container-section flex-inverse">
         <div class="section-1 home-skill-con section-border">
-            <div style="width: 100%">
-                <div class="form-group">
-                    <label>
-                        <span class="label">NAME</span>
-                        <input type="text" name="a-username" autocomplete="off"
-                               readonly onfocus="this.removeAttribute('readonly');"/>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <span class="label">EMAIL</span>
-                        <input name="a-password" type="text" autocomplete="off"
-                               readonly onfocus="this.removeAttribute('readonly');"/>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <span class="label">MESSAGE</span>
-                        <textarea rows="5" name="a-password"  autocomplete="off"
-                                  readonly onfocus="this.removeAttribute('readonly');"></textarea>
-                    </label>
-                </div>
-                <br>
-                <button class="button-main">Send Message</button>
-            </div>
+            <?php include_once("components/contact_form.php") ?>
         </div>
         <div class="section-2 home-heading">
             <h1 class="title text-center margin-top-30">Contact me</h1>
@@ -148,31 +124,7 @@
             <h1 class="title text-center margin-top-30">Contact me</h1>
         </div>
         <div class="section-1 home-skill-con section-border">
-            <div style="width: 100%">
-                <div class="form-group">
-                    <label>
-                        <span class="label">NAME</span>
-                        <input type="text" name="a-username" autocomplete="off"
-                               readonly onfocus="this.removeAttribute('readonly');"/>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <span class="label">EMAIL</span>
-                        <input name="a-password" type="text" autocomplete="off"
-                               readonly onfocus="this.removeAttribute('readonly');"/>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <span class="label">MESSAGE</span>
-                        <textarea rows="5" name="a-password"  autocomplete="off"
-                                  readonly onfocus="this.removeAttribute('readonly');"></textarea>
-                    </label>
-                </div>
-                <br>
-                <button class="button-main">Send Message</button>
-            </div>
+            <?php include_once("components/contact_form.php") ?>
         </div>
         
     </div>

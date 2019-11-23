@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables_light";
 
 html,
 body {
@@ -239,7 +239,7 @@ body {
   border: 1px solid $main_white;
   border-radius: 30px;
   transition: 0.3s ease;
-  outline: none !important;
+  outline: none;
 
   &:hover {
     color: $primary_color;

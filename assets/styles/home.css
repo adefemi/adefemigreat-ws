@@ -11,6 +11,38 @@
           justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .home-heading .title,
+  .home-heading .title2 {
+    text-align: center !important;
+  }
+}
+
+.home-heading-image .img-con-cover {
+  position: relative;
+}
+
+.home-heading-image .img-con-cover::after {
+  content: "that's me!!!";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.home-heading-image .img-con-cover:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
 .home-skill-con {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -35,6 +35,12 @@ $request = $_SERVER['REQUEST_URI'];
                 case '/login' :
                     require_once "pages/LoginComponents/loginContent.php";
                     break;
+                case '/blog' :
+                    require_once "pages/BlogComponents/BlogContent.php";
+                    break;
+                case '/store' :
+                    require_once "pages/StoreComponents/StoreContent.php";
+                    break;
                 case '/register' :
                     require_once "pages/RegisterComponents/registerContent.php";
                     break;
