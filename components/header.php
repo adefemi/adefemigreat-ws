@@ -9,6 +9,7 @@
         <div class="nav-drawer" id="nav-drawer">
             <div class="nav-drawer-toggler"></div>
         </div>
+        <div class="nav-items"><i data-feather="sun"></i></div>
         <!-- <div class="nav-items"><a href="/login">Log in</a></div> -->
     </div>
 </div>

@@ -11,10 +11,17 @@
         </div>
     </div>
     <div class="container-section flex-inverse">
-        <div class="section-1 home-heading section-border">
+        <div class="section-1 home-heading section-border about-section">
             <p class="context">
              <?php echo($decoded_setting['about']); ?>
             </p>
+            <?php 
+                $res = $decoded_setting["resume"];
+                if($res) {
+                    echo('<a href="'.$res.'" target="_blank">Resume</a>');
+                }
+            ?>
+                
         </div>
         <div class="section-2 home-heading">
             <h1 class="title text-center">About me</h1>

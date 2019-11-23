@@ -5,4 +5,6 @@
 	$GLOBALS["gallery_api"] = $GLOBALS["base_api"] . "/gallery";
 
 	include_once("router.php")
+
+	
 ?>
